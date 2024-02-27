@@ -1,4 +1,3 @@
-import { useDebug } from '@studio-freight/hamo'
 import { raf } from '@studio-freight/tempus'
 import { RealViewport } from 'components/real-viewport'
 import { gsap } from 'gsap'
@@ -6,7 +5,6 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { useScroll } from 'hooks/use-scroll'
 import { GTM_ID } from 'lib/analytics'
 import { useStore } from 'lib/store'
-import dynamic from 'next/dynamic'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import 'styles/global.scss'
@@ -22,18 +20,8 @@ if (typeof window !== 'undefined') {
   }, 0)
 }
 
-const GridDebugger = dynamic(
-  () =>
-    import('components/grid-debugger').then(({ GridDebugger }) => GridDebugger),
-  { ssr: false }
-)
-
-const Leva = dynamic(() => import('leva').then(({ Leva }) => Leva), {
-  ssr: false,
-})
 
 function MyApp({ Component, pageProps }) {
-  const debug = useDebug()
   const lenis = useStore(({ lenis }) => lenis)
 
   useScroll(ScrollTrigger.update)
@@ -52,12 +40,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Leva hidden={!debug} />
-      {debug && (
-        <>
-          <GridDebugger />
-        </>
-      )}
+    
 
       {/* Google Tag Manager - Global base code */}
       {process.env.NODE_ENV !== 'development' && (
