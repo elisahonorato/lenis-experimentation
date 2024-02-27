@@ -11,18 +11,13 @@ export const Footer = () => {
     <footer className={cn('theme-light', s.footer)}>
       <div className={cn(s.top, 'layout-grid hide-on-mobile')}>
         <p className={cn(s['first-line'], 'h1')}>
-          Lenis is <br />
-          <span className="contrast">Open source</span>
+          Tecnología <br />
+          <span className="contrast">Hardware</span>
         </p>
-        <div className={s['shameless-plug']}>
-          <p className="h4">Studio Freight</p>
-          <p className="p-s">
-            An independent creative <br /> studio built on principle
-          </p>
-        </div>
         <p className={cn(s['last-line'], 'h1')}>
-          & open to <span className="hide-on-desktop">&nbsp;</span> features,{' '}
-          <br /> forks or prs &nbsp;
+          <span className="contrast">& Software</span> <br />
+           <span className="hide-on-desktop">&nbsp;</span> automatización,{' '}
+          <br /> de la construcción &nbsp;
         </p>
         <Button
           className={s.cta}

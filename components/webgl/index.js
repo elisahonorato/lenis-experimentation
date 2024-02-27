@@ -135,14 +135,14 @@ function Particles({
 
 const steps = [
   {
-    position: [0.1, 1.75, 0],
-    scale: 1,
+    position: [0, 0, 0],
+    scale: 0.2,
     rotation: [0, 0, 0],
     type: 1,
   },
   {
     position: [0.15, -0.4, 0],
-    scale: 1,
+    scale: 0.0002,
     rotation: [
       MathUtils.degToRad(-45),
       MathUtils.degToRad(-135),
@@ -191,53 +191,55 @@ const steps = [
     type: 1,
   },
   {
-    position: [0.16, -1.38, 0],
-    scale: 0.05,
+    position: [0, 0, 0],
+    scale: 10,
     rotation: [
       MathUtils.degToRad(0),
-      MathUtils.degToRad(200),
-      MathUtils.degToRad(-16),
+      MathUtils.degToRad(-180),
+      MathUtils.degToRad(0),
     ],
     type: 2,
   },
   {
-    position: [0, -0.68, 0],
-    scale: 0.04,
+    position: [0, 0, 0],
+    scale: 2,
     rotation: [
       MathUtils.degToRad(0),
-      MathUtils.degToRad(-14),
-      MathUtils.degToRad(-16),
+      MathUtils.degToRad(0),
+      MathUtils.degToRad(0),
     ],
     type: 2,
   },
   {
-    position: [-0.22, -0.61, 0],
-    scale: 0.03,
+    position: [0, 0, 0],
+    scale: 2,
     rotation: [
       MathUtils.degToRad(0),
-      MathUtils.degToRad(-(157 + 360)),
-      MathUtils.degToRad(-16),
+      MathUtils.degToRad(0),
+      MathUtils.degToRad(0),
     ],
     type: 2,
   },
   {
-    position: [0.2, -0.46, 0],
-    scale: 0.03,
+    position: [0, 0, 0],
+    scale: 2,
     rotation: [
       MathUtils.degToRad(0),
-      MathUtils.degToRad(-(340 + 360)),
-      MathUtils.degToRad(-16),
+      MathUtils.degToRad(-180),
+      MathUtils.degToRad(0),
     ],
     type: 2,
   },
+
+
 ]
 
 // const thresholds = [0, 1000, 2000, 3000, 4000, 5000]
 
 
 export function Arm() {
-  const { scene: arm1 } = useGLTF('/models/cbot.glb')
-  const { scene: arm2 } = useGLTF('/models/cbot2.glb')
+  const { scene: arm1 } = useGLTF('/models/cbot2.glb')
+  const { scene: arm2 } = useGLTF('/models/cbot.glb')
   const [type, setType] = useState(1)
 
 
