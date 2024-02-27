@@ -23,11 +23,6 @@ if (typeof window !== 'undefined') {
   }, 0)
 }
 
-const Stats = dynamic(
-  () => import('components/stats').then(({ Stats }) => Stats),
-  { ssr: false }
-)
-
 const GridDebugger = dynamic(
   () =>
     import('components/grid-debugger').then(({ GridDebugger }) => GridDebugger),

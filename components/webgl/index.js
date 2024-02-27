@@ -283,7 +283,7 @@ export function Arm() {
         value: 1,
         max: 1,
       },
-      lightsColor: '#FF98A2',
+      lightsColor: '#d3d1d1',
       ambientColor: '#0E0E0E',
     }),
     []
@@ -336,14 +336,14 @@ export function Arm() {
       setLights({
         light1Intensity: 0.35,
         light2Intensity: 1.15,
-        lightsColor: '#FF98A2',
-        ambientColor: '#FF98A2',
+        lightsColor: '#d3d1d1',
+        ambientColor: '#d3d1d1',
       })
     } else {
       setLights({
         light1Intensity: 1,
         light2Intensity: 1,
-        lightsColor: '#efefef',
+        lightsColor: '#d3d1d1',
         ambientColor: '#b0B0B0',
       })
     }
