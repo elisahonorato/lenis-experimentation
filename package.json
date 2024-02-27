@@ -19,6 +19,7 @@
     "@react-three/drei": "^9.58.1",
     "@react-three/fiber": "^8.12.0",
     "@studio-freight/hamo": "^0.6.12",
+    "@studio-freight/lenis": "^1.0.39",
     "@studio-freight/tempus": "^0.0.36",
     "clsx": "^1.2.1",
     "glslify-loader": "^2.0.0",

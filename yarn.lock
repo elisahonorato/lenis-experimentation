@@ -1611,6 +1611,11 @@
     rimraf "^5.0.1"
     zustand "^4.4.7"
 
+"@studio-freight/lenis@^1.0.39":
+  version "1.0.39"
+  resolved "https://registry.npmjs.org/@studio-freight/lenis/-/lenis-1.0.39.tgz"
+  integrity sha512-63LPZD087kFSiNS3lF6Uve8fFeshQwNCXrl7DUocoeUYiElVTzr9a+dLodNBa0Yn5NZ4umAoQQ6LOosB5I6AAQ==
+
 "@studio-freight/tempus@^0.0.36":
   version "0.0.36"
   resolved "https://registry.npmjs.org/@studio-freight/tempus/-/tempus-0.0.36.tgz"
